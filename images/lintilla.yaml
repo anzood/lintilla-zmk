@@ -1,48 +1,6 @@
 layout: {zmk_keyboard: lintilla}
 layers:
-  Qwerty:
-  - Launchpad MissionCtrl
-  - {t: MUTE, h: keyboard}
-  - Esc
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - ⌫
-  - {t: ⇥, h: 🌐}
-  - {t: A, h: ⇧}
-  - {t: S, h: ^}
-  - {t: D, h: ⌥}
-  - {t: F, h: ⌘}
-  - {t: G, h: Alt}
-  - {t: H, h: Alt}
-  - {t: J, h: ⌘}
-  - {t: K, h: ⌥}
-  - {t: L, h: ^}
-  - {t: '''', h: ⇧}
-  - {t: ↵, h: 🌐}
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - {t: ',', s: ;}
-  - {t: ., s: ':'}
-  - {t: /, s: \}
-  - {t: (, h: numpad}
-  - {t: sticky ⇧, h: navigation, s: caps word}
-  - {t: '{', h: LCMD}
-  - {t: '}', h: RCMD}
-  - {t: ␣, h: symbols}
-  - {t: ), h: ⌥}
+  Qwerty: ['!', '?', Esc, Q, W, E, R, T, Y, U, I, O, P, ⌫, ⇥, A, S, D, F, G, H, J, K, L, '''', ↵, Z, X, C, V, B, N, M, ',', ., /, <, '>', '~', '[', ']', '@']
   numpad:
   - ''
   - ⌦
@@ -80,7 +38,7 @@ layers:
   - '2'
   - '3'
   - '='
-  - {type: held}
+  - {t: ▽, type: trans}
   - navigation
   - ''
   - ','
@@ -166,7 +124,7 @@ layers:
   - F2
   - F3
   - ''
-  - {type: held}
+  - {t: ▽, type: trans}
   - {type: held}
   - ''
   - F12
@@ -213,11 +171,11 @@ layers:
   - '&'
   - '-'
   - ''
-  - {type: held}
+  - {t: ▽, type: trans}
   - ''
   keyboard:
   - dongle flash
-  - {type: held}
+  - {t: ▽, type: trans}
   - BRI UP
   - ''
   - ''
