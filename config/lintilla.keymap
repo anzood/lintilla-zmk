@@ -61,7 +61,7 @@
             label = "DEFAULT";
             display-name = "DEFAULT";
             bindings = <
-                &mt LCTRL GRAVE                                                                                                                                                                     &mt LGUI LBKT
+                &mt LCTRL GRAVE                                                                                                                                                                     &mt GLOBE LBKT
 &mt LALT BSLH   &kp Q            &kp W         &kp E        &kp R        &kp T                                                                  &kp Y       &kp U        &kp I        &kp O         &kp P            &kp SQT
 &mt LSHFT NUBS  &hml LCTRL A     &hml LSHFT S  &hml LALT D  &hml LGUI F  &kp G                                                                  &kp H       &hmr RGUI J  &hmr RALT K  &hmr RSHFT L  &hmr RCTRL SEMI  &kp RBKT
                 &kp Z            &kp X         &kp C        &kp V        &kp B                                                                  &kp N       &kp M        &kp COMMA    &kp DOT       &kp SLASH
@@ -85,11 +85,11 @@
             label = "NAV";
             display-name = "NAV";
             bindings = <
-       &none                                                                                                                                                                   &none
-&none  &kp GLOBE  &kp PG_UP  &kp LG(GRAVE)  &kp HOME   &kp PSCRN                                        &none   &kp F1                    &kp F2    &kp LG(Q)                  &none          &none
-&none  &kp INS    &kp LEFT   &kp UP         &kp RIGHT  &kp LG(SPACE)                                    &none   &kp RGUI                  &kp LALT  &kp RSHFT                  &kp RCTRL      &none
-       &kp DEL    &kp PG_DN  &kp DOWN       &kp END    &kp ESC                                          &none   &kp LS(LG(LEFT_BRACKET))  &kp RALT  &kp LS(LG(RIGHT_BRACKET))  &kp LG(SPACE)
-                                                       &kp BSPC       &kp TAB  &kp RET  &trans  &trans  &trans
+       &none                                                                                                                                                                                        &none
+&none  &kp GLOBE  &kp PG_UP  &kp LG(GRAVE)  &kp HOME   &kp LG(LS(NUMBER_4))                                    &kp LS(LG(NUMBER_3))  &kp F1                    &kp F2    &kp LG(Q)                  &kp LS(LG(N5))  &none
+&none  &kp INS    &kp LEFT   &kp UP         &kp RIGHT  &kp LG(SPACE)                                           &none                 &kp RGUI                  &kp LALT  &kp RSHFT                  &kp RCTRL       &none
+       &kp DEL    &kp PG_DN  &kp DOWN       &kp END    &kp ESC                                                 &none                 &kp LS(LG(LEFT_BRACKET))  &kp RALT  &kp LS(LG(RIGHT_BRACKET))  &kp LG(SPACE)
+                                                       &kp BSPC              &kp TAB  &kp RET  &trans  &trans  &trans
             >;
         };
 
