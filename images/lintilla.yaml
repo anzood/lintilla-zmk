@@ -16,16 +16,16 @@ layers:
   - P
   - ''''
   - {t: NUBS, h: ⇧}
-  - A
-  - S
-  - D
-  - F
+  - {t: A, h: ^}
+  - {t: S, h: ⇧}
+  - {t: D, h: ⌥}
+  - {t: F, h: ⌘}
   - G
   - H
-  - J
-  - K
-  - L
-  - ;
+  - {t: J, h: RGUI}
+  - {t: K, h: Alt}
+  - {t: L, h: RSHFT}
+  - {t: ;, h: RCTRL}
   - ']'
   - Z
   - X
