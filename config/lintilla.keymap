@@ -37,7 +37,7 @@
 
         default {
             label = "DEFAULT";
-            display-name = "DEFAULT"                ;
+            display-name = "DEFAULT";
             bindings = <
 
             &mt LGUI GRAVE                                                                        &mt LGUI LBKT
@@ -50,7 +50,7 @@
 
         symbol {
                         label = "SYMBOLS";
-                        display-name = "SYMBOLS" 
+                        display-name = "SYMBOLS";
                         bindings = <
             &kp LGUI                                                                              &kp RGUI
    &kp LCTRL &none      &kp AT    &kp LBKT  &kp RBKT  &kp CARET      &kp DLLR  &none     &none    &none    &none         &kp RCTRL
@@ -62,7 +62,7 @@
 
                 navigation {
                         label = "NAV";
-                        display-name = "NAV"
+                        display-name = "NAV";
                         bindings = <
             &none                                                                                   &none
    &none   &kp K_APP &kp PG_UP &kp LG(GRAVE) &kp HOME  &kp PSCRN     &kp LA(LS(N6)) &kp LA(F1)    &kp LA(F2) &kp LA(F4)    &none         &none 
@@ -74,7 +74,7 @@
 
                 number {
                         label = "NUMBERS";
-                        display-name = "NUMBERS"
+                        display-name = "NUMBERS";
                         bindings = <
                         &none                                                                                   &none
    &none &none         &kp LC(LS(TAB)) &kp LG(GRAVE) &kp LC(TAB)   &kp LA(LS(N6)) &kp KP_SLASH    &kp N7  &kp N8 &kp N9 &kp KP_MINUS &none 
@@ -86,7 +86,7 @@
 
                 fn {
                         label = "FN KEYS";
-                        display-name = "FN KEYS"
+                        display-name = "FN KEYS";
                         bindings = <
                         &none                                                                                   &none
    &none  &kp F1   &kp F2   &kp F3   &kp F4   &kp LG(LC(D))        &none             &none            &none     &kp LG(LC(F4)) &none     &none 
@@ -98,7 +98,7 @@
 
                 adjust {
                         label = "ADJUST";
-                        display-name = "ADJUST"
+                        display-name = "ADJUST";
                         bindings = <
         &bootloader                                                                                   &bootloader
    &none   &kp C_MUTE   &none        &none        &none        &kp C_VOL_UP   &ind_con      &ind_bat &none   &none   &none  &studio_unlock 
