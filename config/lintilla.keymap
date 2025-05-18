@@ -32,6 +32,28 @@
         };
     };
 
+    behaviors {
+        hml: homewrow_mods_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_LEFT_HAND";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-trigger-key-positions = <8 9 10 11 1 20 12 13 20 21 23 24 25 31 32 33 34 35 41 40 39 22>;
+        };
+
+        hmr: homewrow_mods_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_RIGHT_HAND";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-trigger-key-positions = <0 2 3 4 5 6 7 14 15 16 17 18 19 26 27 28 29 30 36 37 38>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -39,11 +61,11 @@
             label = "DEFAULT";
             display-name = "DEFAULT";
             bindings = <
-                &mt LCTRL GRAVE                                                                                                                                     &mt LGUI LBKT
-&mt LALT BSLH   &kp Q            &kp W  &kp E  &kp R  &kp T                                                                  &kp Y       &kp U  &kp I      &kp O    &kp P          &kp SQT
-&mt LSHFT NUBS  &kp A            &kp S  &kp D  &kp F  &kp G                                                                  &kp H       &kp J  &kp K      &kp L    &kp SEMICOLON  &kp RBKT
-                &kp Z            &kp X  &kp C  &kp V  &kp B                                                                  &kp N       &kp M  &kp COMMA  &kp DOT  &kp SLASH
-                                                      &lt NUM BSPC  &mt LSHFT TAB  &mt LGUI ESC  &lt SYM RET  &lt NAV SPACE  &lt FN DEL
+                &mt LCTRL GRAVE                                                                                                                                                                     &mt LGUI LBKT
+&mt LALT BSLH   &kp Q            &kp W         &kp E        &kp R        &kp T                                                                  &kp Y       &kp U        &kp I        &kp O         &kp P            &kp SQT
+&mt LSHFT NUBS  &hml LCTRL A     &hml LSHFT S  &hml LALT D  &hml LGUI F  &kp G                                                                  &kp H       &hmr RGUI J  &hmr RALT K  &hmr RSHFT L  &hmr RCTRL SEMI  &kp RBKT
+                &kp Z            &kp X         &kp C        &kp V        &kp B                                                                  &kp N       &kp M        &kp COMMA    &kp DOT       &kp SLASH
+                                                                         &lt NUM BSPC  &mt LSHFT TAB  &mt LGUI ESC  &lt SYM RET  &lt NAV SPACE  &lt FN DEL
             >;
         };
 
