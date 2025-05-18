@@ -2,7 +2,7 @@ layout: {zmk_keyboard: lintilla}
 layers:
   DEFAULT:
   - {t: '`', h: ^}
-  - {t: '[', h: ⌘}
+  - {t: '[', h: 🌐}
   - {t: \, h: ⌥}
   - Q
   - W
@@ -94,12 +94,12 @@ layers:
   - PgUp
   - ⌘`
   - Home
-  - PSCRN
-  - ''
+  - ⌘⇧4
+  - ⇧⌘3
   - F1
   - F2
   - ⌘Q
-  - ''
+  - ⇧⌘5
   - ''
   - ''
   - INS
