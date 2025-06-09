@@ -39,7 +39,7 @@ layers:
   - /
   - {t: ⌫, h: NUMBERS}
   - {t: ⇥, h: ⇧}
-  - {t: Esc, h: ⌘}
+  - {t: Esc, h: MehLGUI}
   - {t: ↵, h: SYMBOLS}
   - {t: SPACE, h: NAV}
   - {t: ⌦, h: FN KEYS}
