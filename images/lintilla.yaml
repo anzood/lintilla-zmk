@@ -1,9 +1,9 @@
 layout: {zmk_keyboard: lintilla}
 layers:
   DEFAULT:
-  - {t: '`', h: ^}
+  - {t: '`', h: ⌥}
   - {t: '[', h: 🌐}
-  - {t: \, h: ⌥}
+  - {t: \, h: ⌘}
   - Q
   - W
   - E
@@ -16,17 +16,17 @@ layers:
   - P
   - ''''
   - {t: NUBS, h: ⇧}
-  - {t: A, h: ^}
-  - {t: S, h: ⇧}
-  - {t: D, h: ⌥}
-  - {t: F, h: ⌘}
+  - A
+  - S
+  - D
+  - F
   - G
   - H
-  - {t: J, h: RGUI}
-  - {t: K, h: Alt}
-  - {t: L, h: RSHFT}
-  - {t: ;, h: RCTRL}
-  - ']'
+  - J
+  - K
+  - L
+  - ;
+  - {t: ']', h: ^}
   - Z
   - X
   - C
@@ -39,10 +39,10 @@ layers:
   - /
   - {t: ⌫, h: NUMBERS}
   - {t: ⇥, h: ⇧}
-  - {t: Esc, h: MehLGUI}
+  - {t: Esc, h: ⌘}
   - {t: ↵, h: SYMBOLS}
   - {t: SPACE, h: NAV}
-  - {t: ⌦, h: FN KEYS}
+  - {t: ⌦, h: MehLGUI}
   SYMBOLS:
   - ⌘
   - RGUI
@@ -107,7 +107,7 @@ layers:
   - ↑
   - →
   - ⌘SPACE
-  - ''
+  - ⌘SPACE
   - RGUI
   - ⌥
   - RSHFT
@@ -209,12 +209,12 @@ layers:
   - SLCK
   - Num 🔒
   - Caps 🔒
-  - ⌫
+  - {t: ⌫, type: held}
   - ⇥
   - Esc
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   ADJUST:
   - flash
   - flash
