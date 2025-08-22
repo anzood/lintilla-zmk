@@ -90,11 +90,11 @@
             label = "NAV";
             display-name = "NAV";
             bindings = <
-       &none                                                                                                                                                                                        &none
-&none  &kp GLOBE  &kp PG_UP  &kp LG(GRAVE)  &kp HOME   &kp LG(LS(NUMBER_4))                                    &kp LS(LG(NUMBER_3))  &kp F1                    &kp F2    &kp LG(Q)                  &kp LS(LG(N5))  &none
-&none  &kp INS    &kp LEFT   &kp UP         &kp RIGHT  &kp LG(SPACE)                                           &kp LG(SPACE)         &kp RGUI                  &kp LALT  &kp RSHFT                  &kp RCTRL       &none
-       &kp DEL    &kp PG_DN  &kp DOWN       &kp END    &kp ESC                                                 &none                 &kp LS(LG(LEFT_BRACKET))  &kp RALT  &kp LS(LG(RIGHT_BRACKET))  &kp LG(SPACE)
-                                                       &kp BSPC              &kp TAB  &kp RET  &trans  &trans  &trans
+                              &none                                                                                                                                                                                        &none
+&kp LS(LA(LC(LG(NUMBER_3))))  &kp GLOBE  &kp PG_UP  &kp LG(GRAVE)  &kp HOME   &kp LG(LS(NUMBER_4))                                    &kp LS(LG(NUMBER_3))  &kp F1                    &kp F2    &kp LG(Q)                  &kp LS(LG(N5))  &kp LS(LA(LC(LG(NUMBER_2))))
+&kp LS(LA(LC(LG(NUMBER_4))))  &kp INS    &kp LEFT   &kp UP         &kp RIGHT  &kp LG(SPACE)                                           &kp LG(SPACE)         &kp RGUI                  &kp LALT  &kp RSHFT                  &kp RCTRL       &kp LS(LA(LC(LG(NUMBER_1))))
+                              &kp DEL    &kp PG_DN  &kp DOWN       &kp END    &kp ESC                                                 &none                 &kp LS(LG(LEFT_BRACKET))  &kp RALT  &kp LS(LG(RIGHT_BRACKET))  &kp LG(SPACE)
+                                                                              &kp BSPC              &kp TAB  &kp RET  &trans  &trans  &trans
             >;
         };
 
@@ -114,10 +114,10 @@
             label = "FN KEYS";
             display-name = "FN KEYS";
             bindings = <
-       &none                                                                                                                         &none
-&none  &kp F1  &kp F2   &kp F3   &kp F4   &none                                       &none   &none            &none     &none       &none      &none
-&none  &kp F5  &kp F6   &kp F7   &kp F8   &none                                       &kp GLOBE &kp RGUI         &kp LALT  &kp RSHFT   &kp RCTRL  &none
-       &kp F9  &kp F10  &kp F11  &kp F12  &none                                       &none   &kp PAUSE_BREAK  &kp SLCK  &kp KP_NUM  &kp CAPS
+       &none                                                                                                                            &none
+&none  &kp F1  &kp F2   &kp F3   &kp F4   &none                                       &none      &none            &none     &none       &none      &none
+&none  &kp F5  &kp F6   &kp F7   &kp F8   &none                                       &kp GLOBE  &kp RGUI         &kp LALT  &kp RSHFT   &kp RCTRL  &none
+       &kp F9  &kp F10  &kp F11  &kp F12  &none                                       &none      &kp PAUSE_BREAK  &kp SLCK  &kp KP_NUM  &kp CAPS
                                           &kp BSPC  &kp TAB  &kp ESC  &trans  &trans  &trans
             >;
         };
