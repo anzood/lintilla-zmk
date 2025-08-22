@@ -89,7 +89,7 @@ layers:
   NAV:
   - ''
   - ''
-  - ''
+  - Hyper3
   - 🌐
   - PgUp
   - ⌘`
@@ -100,8 +100,8 @@ layers:
   - F2
   - ⌘Q
   - ⇧⌘5
-  - ''
-  - ''
+  - Hyper2
+  - Hyper4
   - INS
   - ←
   - ↑
@@ -112,7 +112,7 @@ layers:
   - ⌥
   - RSHFT
   - RCTRL
-  - ''
+  - Hyper1
   - ⌦
   - PgDn
   - ↓
