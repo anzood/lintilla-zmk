@@ -2,7 +2,7 @@ layout: {zmk_keyboard: lintilla}
 layers:
   DEFAULT:
   - {t: '`', h: ⌥}
-  - {t: '[', h: 🌐}
+  - 🌐
   - {t: \, h: ⌘}
   - Q
   - W
@@ -26,7 +26,7 @@ layers:
   - K
   - L
   - ;
-  - {t: ']', h: ^}
+  - {t: '[', h: ^}
   - Z
   - X
   - C
@@ -68,8 +68,8 @@ layers:
   - '!'
   - ''
   - ''
-  - ''
   - Alt
+  - ']'
   - '-'
   - '&'
   - '{'
