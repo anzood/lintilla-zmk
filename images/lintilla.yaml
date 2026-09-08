@@ -1,9 +1,9 @@
 layout: {zmk_keyboard: lintilla}
 layers:
   DEFAULT:
-  - {t: '`', h: ⌥}
-  - 🌐
-  - {t: \, h: ⌘}
+  - {t: '`', h: ⇧}
+  - Alt
+  - {t: NUBS, h: ⌘}
   - Q
   - W
   - E
@@ -15,7 +15,7 @@ layers:
   - O
   - P
   - ''''
-  - {t: NUBS, h: ⇧}
+  - {t: \, h: ⌥}
   - A
   - S
   - D
@@ -76,9 +76,9 @@ layers:
   - '}'
   - _
   - '#'
-  - ''
-  - ''
-  - ''
+  - ⌘-
+  - ⌘0
+  - ⌘=
   - ''
   - {t: ▽, type: trans}
   - ⇧
@@ -92,14 +92,14 @@ layers:
   - Hyper3
   - 🌐
   - PgUp
-  - ⌘`
+  - ⌘^V
   - Home
-  - ⌘⇧4
+  - HyperNUBS
   - ⇧⌘3
   - F1
   - F2
   - ⌘Q
-  - ⇧⌘5
+  - Hyper'
   - Hyper2
   - Hyper4
   - INS
@@ -135,7 +135,7 @@ layers:
   - ''
   - ''
   - ^⇧TAB
-  - ⌘`
+  - ⌘^V
   - ^TAB
   - ''
   - KP SLASH
