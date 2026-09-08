@@ -91,7 +91,7 @@
             display-name = "NAV";
             bindings = <
                               &none                                                                                                                                                                                        &none
-&kp LS(LA(LC(LG(NUMBER_3))))  &kp GLOBE  &kp PG_UP  &kp LG(LC(V))  &kp HOME   &kp LS(LA(LC(LG(NUBS))))                                &kp LS(LG(NUMBER_3))  &kp F1                    &kp F2    &kp LG(Q)                  &kp LS(LA(LC(LG(SQT)))) &kp LS(LA(LC(LG(NUMBER_2))))
+&kp LS(LA(LC(LG(NUMBER_3))))  &kp GLOBE  &kp PG_UP  &kp LG(LC(V))  &kp HOME   &kp LS(LA(LC(LG(BSLH))))                                &kp LS(LA(LC(LG(BSLH)))) &kp F1                    &kp F2    &kp LG(Q)                  &kp LS(LA(LC(LG(SQT)))) &kp LS(LA(LC(LG(NUMBER_2))))
 &kp LS(LA(LC(LG(NUMBER_4))))  &kp INS    &kp LEFT   &kp UP         &kp RIGHT  &kp LG(SPACE)                                           &kp LG(SPACE)         &kp RGUI                  &kp LALT  &kp RSHFT                  &kp RCTRL       &kp LS(LA(LC(LG(NUMBER_1))))
                               &kp DEL    &kp PG_DN  &kp DOWN       &kp END    &kp ESC                                                 &none                 &kp LS(LG(LEFT_BRACKET))  &kp RALT  &kp LS(LG(RIGHT_BRACKET))  &kp LG(SPACE)
                                                                               &kp BSPC              &kp TAB  &kp RET  &trans  &trans  &trans
