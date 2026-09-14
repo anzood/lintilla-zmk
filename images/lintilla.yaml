@@ -98,7 +98,7 @@ layers:
   - Hyper\
   - F1
   - F2
-  - ⌘Q
+  - ⌘⇧A
   - Hyper'
   - Hyper2
   - Hyper4
@@ -170,8 +170,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - KP ENTER
-  - ','
   - '0'
+  - ','
   FN KEYS:
   - ''
   - ''
