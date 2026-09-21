@@ -80,8 +80,8 @@
             bindings = <
            &kp LGUI                                                                                                                   &kp RGUI
 &kp LCTRL  &kp PLUS   &kp AT    &kp LBKT  &kp RBKT  &kp CARET                                      &kp DLLR   &none     &none  &none  &none     &kp RCTRL
-&kp LALT   &kp EQUAL  &kp HASH  &kp LPAR  &kp RPAR  &kp STAR                                       &kp PRCNT  &kp EXCL  &none  &none  &kp RALT  &kp RBKT
-           &kp MINUS  &kp AMPS  &kp LBRC  &kp RBRC  &kp UNDER                                      &kp NUHS   &kp LG(MINUS) &kp LG(N0) &kp LG(EQUAL) &none
+&kp LALT   &kp MINUS  &kp HASH  &kp LPAR  &kp RPAR  &kp STAR                                       &kp PRCNT  &kp EXCL  &none  &none  &kp RALT  &kp RBKT
+           &kp EQUAL  &kp AMPS  &kp LBRC  &kp RBRC  &kp UNDER                                      &kp NUHS   &kp LG(MINUS) &kp LG(N0) &kp LG(EQUAL) &none
                                                     &trans     &kp LSHFT  &kp ESC  &trans  &trans  &trans
             >;
         };
