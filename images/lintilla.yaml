@@ -3,7 +3,7 @@ layers:
   DEFAULT:
   - {t: '`', h: ⇧}
   - Alt
-  - {t: NUBS, h: ⌘}
+  - NUBS
   - Q
   - W
   - E
@@ -15,7 +15,7 @@ layers:
   - O
   - P
   - ''''
-  - {t: \, h: ⌥}
+  - \
   - A
   - S
   - D
@@ -26,7 +26,7 @@ layers:
   - K
   - L
   - ;
-  - {t: '[', h: ^}
+  - '['
   - Z
   - X
   - C
@@ -42,7 +42,7 @@ layers:
   - {t: Esc, h: ⌘}
   - {t: ↵, h: SYMBOLS}
   - {t: SPACE, h: NAV}
-  - {t: ⌦, h: MehLGUI}
+  - {t: ^, h: MehLGUI}
   SYMBOLS:
   - ⌘
   - RGUI
@@ -107,11 +107,11 @@ layers:
   - ↑
   - →
   - ⌘SPACE
-  - ⌘SPACE
-  - RGUI
-  - ⌥
-  - RSHFT
-  - RCTRL
+  - {t: ⇧LGUI, h: sticky}
+  - {t: RGUI, h: RGUI}
+  - {t: ⌥, h: ⌥}
+  - {t: RSHFT, h: RSHFT}
+  - {t: RCTRL, h: RCTRL}
   - Hyper1
   - ⌦
   - PgDn
@@ -145,10 +145,10 @@ layers:
   - KP MINUS
   - ''
   - ''
-  - ^
-  - ⇧
-  - ⌥
-  - ⌘
+  - {t: ^, h: ^}
+  - {t: ⇧, h: ⇧}
+  - {t: ⌥, h: ⌥}
+  - {t: ⌘, h: ⌘}
   - ''
   - KP MULTIPLY
   - '4'
@@ -194,10 +194,10 @@ layers:
   - F8
   - ''
   - 🌐
-  - RGUI
-  - ⌥
-  - RSHFT
-  - RCTRL
+  - {t: RGUI, h: RGUI}
+  - {t: ⌥, h: ⌥}
+  - {t: RSHFT, h: RSHFT}
+  - {t: RCTRL, h: RCTRL}
   - ''
   - F9
   - F10
