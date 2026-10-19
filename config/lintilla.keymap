@@ -63,24 +63,48 @@
             bindings = <&kp>, <&sk>;
         };
 
-        hml: homewrow_mods_left {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_LEFT_HAND";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            hold-trigger-key-positions = <8 9 10 11 1 20 12 13 20 21 23 24 25 31 32 33 34 35 41 40 39 22>;
+        cmd_on: cmd_on {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LGUI>;
         };
 
-        hmr: homewrow_mods_right {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_RIGHT_HAND";
-            bindings = <&kp>, <&kp>;
+        cmd_off: cmd_off {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_release &kp LGUI>;
+        };
 
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            hold-trigger-key-positions = <0 2 3 4 5 6 7 14 15 16 17 18 19 26 27 28 29 30 36 37 38>;
+        opt_on: opt_on {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LALT>;
+        };
+
+        opt_off: opt_off {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_release &kp LALT>;
+        };
+
+        app_next: app_next {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+            bindings = <&cmd_on>, <&kp TAB>, <&cmd_off>;
+            ignored-key-positions = <27>;
+        };
+
+        app_prev: app_prev {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+            bindings = <&cmd_on>, <&kp LS(TAB)>, <&cmd_off>;
+            ignored-key-positions = <29>;
+        };
+
+        win_next: win_next {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+            bindings = <&opt_on>, <&kp TAB>, <&opt_off>;
         };
     };
 
@@ -130,7 +154,7 @@
        &none                                                                                                                                                                          &none
 &none  &none          &kp LC(LS(TAB))           &kp LG(LC(V))  &kp LC(TAB)                &none                                              &kp KP_SLASH     &kp N7  &kp N8  &kp N9  &kp KP_MINUS  &none
 &none  &smod LCTRL LCTRL  &smod LSHFT LSHFT     &smod LALT LALT  &smod LGUI LGUI                   &none                                              &kp KP_MULTIPLY  &kp N4  &kp N5  &kp N6  &kp KP_PLUS   &none
-       &kp LG(SPACE)  &kp LS(LG(LEFT_BRACKET))  &kp RALT       &kp LS(LG(RIGHT_BRACKET))  &none                                              &kp KP_DOT       &kp N1  &kp N2  &kp N3  &kp DOT
+       &kp LG(SPACE)  &app_prev  &win_next      &app_next  &none                                              &kp KP_DOT       &kp N1  &kp N2  &kp N3  &kp DOT
                                                                                           &kp BSPC  &trans  &trans             &kp KP_ENTER  &kp N0 &kp COMMA
             >;
         };

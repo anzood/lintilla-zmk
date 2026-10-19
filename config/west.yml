@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: englmaxi
       url-base: https://github.com/englmaxi
+    - name: urob
+      url-base: https://github.com/urob
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -16,6 +18,9 @@ manifest:
       revision: v0.3
     - name: zmk-dongle-display
       remote: englmaxi
+      revision: v0.3
+    - name: zmk-tri-state
+      remote: urob
       revision: v0.3
   self:
     path: config
