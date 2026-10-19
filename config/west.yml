@@ -21,6 +21,6 @@ manifest:
       revision: v0.3
     - name: zmk-tri-state
       remote: urob
-      revision: v0.3
+      revision: c08969627245adeddbcdb6dfc1a4c167c04160e2
   self:
     path: config
