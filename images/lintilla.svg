@@ -762,15 +762,15 @@ path.combo {
 </g>
 <g transform="translate(152, 177) rotate(-7.5)" class="key keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">⇧⌘[</text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 78%">&amp;app_prev</tspan></text>
 </g>
 <g transform="translate(205, 141) rotate(-2.5)" class="key keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Alt</text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 78%">&amp;win_next</tspan></text>
 </g>
 <g transform="translate(261, 168)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">⇧⌘]</text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 78%">&amp;app_next</tspan></text>
 </g>
 <g transform="translate(317, 177)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

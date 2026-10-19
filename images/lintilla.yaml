@@ -157,9 +157,9 @@ layers:
   - KP PLUS
   - ''
   - ⌘SPACE
-  - ⇧⌘[
-  - Alt
-  - ⇧⌘]
+  - '&app_prev'
+  - '&win_next'
+  - '&app_next'
   - ''
   - KP DOT
   - '1'
