@@ -128,9 +128,9 @@
             display-name = "SYMBOLS";
             bindings = <
            &kp LGUI                                                                                                                   &kp RGUI
-&kp LCTRL  &kp PLUS   &kp AT    &kp LBKT  &kp RBKT  &kp CARET                                      &kp DLLR   &none     &none  &none  &none     &kp RCTRL
-&kp LALT   &kp MINUS  &kp HASH  &kp LPAR  &kp RPAR  &kp STAR                                       &kp PRCNT  &kp EXCL  &none  &none  &kp RALT  &kp RBKT
-           &kp EQUAL  &kp AMPS  &kp LBRC  &kp RBRC  &kp UNDER                                      &kp NUHS   &kp LG(MINUS) &kp LG(N0) &kp LG(EQUAL) &none
+&kp LCTRL  &kp AT     &kp PLUS  &kp LBKT  &kp RBKT  &kp CARET                                      &kp DLLR   &none     &none  &none  &none     &kp RCTRL
+&kp LALT   &kp MINUS  &kp EQUAL &kp LPAR  &kp RPAR  &kp STAR                                       &kp PRCNT  &kp EXCL  &none  &none  &kp RALT  &kp RBKT
+           &kp AMPS   &kp HASH  &kp LBRC  &kp RBRC  &kp UNDER                                      &kp NUHS   &kp LG(MINUS) &kp LG(N0) &kp LG(EQUAL) &none
                                                     &trans     &kp LSHFT  &kp ESC  &trans  &trans  &trans
             >;
         };
@@ -140,9 +140,9 @@
             display-name = "NAV";
             bindings = <
                               &none                                                                                                                                                                                        &none
-&kp LS(LA(LC(LG(NUMBER_3))))  &kp GLOBE  &kp PG_UP  &kp LG(LC(V))  &kp HOME   &kp LS(LA(LC(LG(BSLH))))                                &kp LS(LA(LC(LG(BSLH)))) &kp F1                 &kp F2    &kp LG(LS(A))              &kp LS(LA(LC(LG(SQT)))) &kp LS(LA(LC(LG(NUMBER_2))))
-&kp LS(LA(LC(LG(NUMBER_4))))  &kp INS    &kp LEFT   &kp UP         &kp RIGHT  &kp LG(SPACE)                                           &sk LS(LGUI)          &smod RGUI RGUI           &smod LALT LALT  &smod RSHFT RSHFT   &smod RCTRL RCTRL       &kp LS(LA(LC(LG(NUMBER_1))))
-                              &kp DEL    &kp PG_DN  &kp DOWN       &kp END    &kp ESC                                                 &none                 &kp LS(LG(LEFT_BRACKET))  &kp RALT  &kp LS(LG(RIGHT_BRACKET))  &kp LG(SPACE)
+&kp LS(LA(LC(LG(NUMBER_3))))  &kp GLOBE  &kp PG_UP  &kp LG(LC(V))  &kp LG(LEFT)   &kp LS(LA(LC(LG(BSLH))))                                &kp LS(LA(LC(LG(BSLH)))) &kp F1                 &kp F2    &kp LG(LS(A))              &kp LS(LA(LC(LG(SQT)))) &kp LS(LA(LC(LG(NUMBER_2))))
+&kp LS(LA(LC(LG(NUMBER_4))))  &kp INS    &kp LEFT   &kp UP         &kp RIGHT      &kp LG(SPACE)                                           &sk LS(LGUI)          &smod RGUI RGUI           &smod LALT LALT  &smod RSHFT RSHFT   &smod RCTRL RCTRL       &kp LS(LA(LC(LG(NUMBER_1))))
+                              &kp DEL    &kp PG_DN  &kp DOWN       &kp LG(RIGHT)  &kp ESC                                                 &none                 &kp LS(LG(LEFT_BRACKET))  &smod LALT LALT  &kp LS(LG(RIGHT_BRACKET))  &kp LG(SPACE)
                                                                               &kp BSPC              &kp TAB  &kp RET  &trans  &trans  &trans
             >;
         };
@@ -152,10 +152,10 @@
             display-name = "NUMBERS";
             bindings = <
        &none                                                                                                                                                                          &none
-&none  &none          &kp LC(LS(TAB))           &kp LG(LC(V))  &kp LC(TAB)                &none                                              &kp KP_SLASH     &kp N7  &kp N8  &kp N9  &kp KP_MINUS  &none
-&none  &smod LCTRL LCTRL  &smod LSHFT LSHFT     &smod LALT LALT  &smod LGUI LGUI                   &none                                              &kp KP_MULTIPLY  &kp N4  &kp N5  &kp N6  &kp KP_PLUS   &none
-       &kp LG(SPACE)  &app_prev  &win_next      &app_next  &none                                              &kp KP_DOT       &kp N1  &kp N2  &kp N3  &kp DOT
-                                                                                          &kp BSPC  &trans  &trans             &kp KP_ENTER  &kp N0 &kp COMMA
+&none  &none              &kp LC(LS(TAB))        &kp LG(LC(V))    &kp LC(TAB)       &none                                   &kp KP_SLASH     &kp N7  &kp N8  &kp N9  &kp KP_MINUS  &none
+&none  &smod LCTRL LCTRL  &smod LSHFT LSHFT      &smod LALT LALT  &smod LGUI LGUI   &kp HOME                                &kp KP_MULTIPLY  &kp N4  &kp N5  &kp N6  &kp KP_PLUS   &none
+       &kp LG(SPACE)      &app_prev              &win_next        &app_next         &kp END                                 &kp KP_DOT       &kp N1  &kp N2  &kp N3  &kp DOT
+                                                                              &kp BSPC  &trans  &trans             &kp KP_ENTER  &kp N0 &kp COMMA
             >;
         };
 
@@ -164,9 +164,9 @@
             display-name = "FN KEYS";
             bindings = <
        &none                                                                                                                            &none
-&none  &kp F1  &kp F2   &kp F3   &kp F4   &none                                       &none      &none            &none     &none       &none      &none
+&none  &kp F1  &kp F2   &kp F3   &kp F4   &none                                       &none      &kp PAUSE_BREAK   &kp SLCK     &kp KP_NUM  &kp CAPS      &none
 &none  &kp F5  &kp F6   &kp F7   &kp F8   &none                                       &kp GLOBE  &smod RGUI RGUI   &smod LALT LALT  &smod RSHFT RSHFT  &smod RCTRL RCTRL  &none
-       &kp F9  &kp F10  &kp F11  &kp F12  &none                                       &none      &kp PAUSE_BREAK  &kp SLCK  &kp KP_NUM  &kp CAPS
+       &kp F9  &kp F10  &kp F11  &kp F12  &none                                       &none      &kp PAUSE_BREAK   &smod LALT LALT  &kp KP_NUM  &kp CAPS
                                           &kp BSPC  &kp TAB  &kp ESC  &trans  &trans  &trans
             >;
         };
