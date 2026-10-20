@@ -47,8 +47,8 @@ layers:
   - ⌘
   - RGUI
   - ^
-  - +
   - '@'
+  - +
   - '['
   - ']'
   - ^
@@ -60,7 +60,7 @@ layers:
   - RCTRL
   - ⌥
   - '-'
-  - '#'
+  - '='
   - (
   - )
   - '*'
@@ -70,8 +70,8 @@ layers:
   - ''
   - Alt
   - ']'
-  - '='
   - '&'
+  - '#'
   - '{'
   - '}'
   - _
@@ -93,7 +93,7 @@ layers:
   - 🌐
   - PgUp
   - ⌘^V
-  - Home
+  - ⌘LEFT
   - Hyper\
   - Hyper\
   - F1
@@ -116,11 +116,11 @@ layers:
   - ⌦
   - PgDn
   - ↓
-  - End
+  - ⌘RIGHT
   - Esc
   - ''
   - ⇧⌘[
-  - Alt
+  - {t: ⌥, h: ⌥}
   - ⇧⌘]
   - ⌘SPACE
   - ⌫
@@ -149,7 +149,7 @@ layers:
   - {t: ⇧, h: ⇧}
   - {t: ⌥, h: ⌥}
   - {t: ⌘, h: ⌘}
-  - ''
+  - Home
   - KP MULTIPLY
   - '4'
   - '5'
@@ -160,7 +160,7 @@ layers:
   - '&app_prev'
   - '&win_next'
   - '&app_next'
-  - ''
+  - End
   - KP DOT
   - '1'
   - '2'
@@ -182,10 +182,10 @@ layers:
   - F4
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - PAUSE BREAK
+  - SLCK
+  - Num 🔒
+  - Caps 🔒
   - ''
   - ''
   - F5
@@ -206,7 +206,7 @@ layers:
   - ''
   - ''
   - PAUSE BREAK
-  - SLCK
+  - {t: ⌥, h: ⌥}
   - Num 🔒
   - Caps 🔒
   - {t: ⌫, type: held}
