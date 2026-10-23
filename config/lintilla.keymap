@@ -44,6 +44,19 @@
     };
 
     behaviors {
+        // Space / NAV: avoid accidental NAV during fast typing.
+        // balanced: NAV only if another key is pressed AND released while Space is held.
+        // require-prior-idle-ms: right after typing a letter, Space is always a tap.
+        lt_spc: layer_tap_space {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <150>;
+            bindings = <&mo>, <&kp>;
+        };
+
         // Thumb: hold = Hyper (app switching), tap = one-shot Ctrl (Ctrl+C/D/L/S)
         hyp: hyper_or_sticky_ctrl {
             compatible = "zmk,behavior-hold-tap";
@@ -119,7 +132,7 @@
 &kp NUBS   &kp Q           &kp W  &kp E  &kp R  &kp T                   &kp Y    &kp U  &kp I      &kp O    &kp P           &kp SQT
 &kp BSLH   &kp A           &kp S  &kp D  &kp F  &kp G                   &kp H    &kp J  &kp K      &kp L    &kp SEMI        &kp LBKT
            &kp Z           &kp X  &kp C  &kp V  &kp B                   &kp N    &kp M  &kp COMMA  &kp DOT  &kp SLASH
-                     &lt NUM BSPC  &mt LSHFT TAB  &mt LGUI ESC  &lt SYM RET  &lt NAV SPACE  &hyp LS(LA(LC(LGUI))) LCTRL
+                     &lt NUM BSPC  &mt LSHFT TAB  &mt LGUI ESC  &lt SYM RET  &lt_spc NAV SPACE  &hyp LS(LA(LC(LGUI))) LCTRL
             >;
         };
 
