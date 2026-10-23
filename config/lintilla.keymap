@@ -22,9 +22,10 @@
     quick-tap-ms = <200>;
 };
 
-// Sticky mods: released on the next key press, forgotten after 1.5 s
+// Sticky mods: released on the next key press, forgotten after 2 s.
+// Layer mods use plain &sk: tap = one-shot mod, hold + other key = ordinary mod.
 &sk {
-    release-after-ms = <1500>;
+    release-after-ms = <2000>;
     quick-release;
 };
 
@@ -62,16 +63,6 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&kp>, <&sk>;
-        };
-
-        // Layer mods: hold = ordinary mod (for arrows/digits), tap = one-shot mod
-        // for the next key after the layer is released
-        smod: sticky_or_hold_mod {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
             tapping-term-ms = <200>;
             bindings = <&kp>, <&sk>;
         };
@@ -154,8 +145,8 @@
             bindings = <
                               &none                                                                                                                                                                                        &none
 &kp LS(LA(LC(LG(NUMBER_3))))  &kp GLOBE  &kp PG_UP  &kp LG(LC(V))  &kp LG(LEFT)   &kp LS(LA(LC(LG(BSLH))))                                &kp LS(LA(LC(LG(BSLH)))) &kp F1                 &kp F2    &kp LG(LS(A))              &kp LS(LA(LC(LG(SQT)))) &kp LS(LA(LC(LG(NUMBER_2))))
-&kp LS(LA(LC(LG(NUMBER_4))))  &kp INS    &kp LEFT   &kp UP         &kp RIGHT      &kp LG(SPACE)                                           &sk LS(LGUI)          &smod RGUI RGUI           &smod LALT LALT  &smod RSHFT RSHFT   &smod RCTRL RCTRL       &kp LS(LA(LC(LG(NUMBER_1))))
-                              &kp DEL    &kp PG_DN  &kp DOWN       &kp LG(RIGHT)  &kp ESC                                                 &none                 &kp LS(LG(LEFT_BRACKET))  &smod LALT LALT  &kp LS(LG(RIGHT_BRACKET))  &kp LG(SPACE)
+&kp LS(LA(LC(LG(NUMBER_4))))  &kp INS    &kp LEFT   &kp UP         &kp RIGHT      &kp LG(SPACE)                                           &sk LS(LGUI)          &sk RGUI              &sk LALT     &sk RSHFT      &sk RCTRL          &kp LS(LA(LC(LG(NUMBER_1))))
+                              &kp DEL    &kp PG_DN  &kp DOWN       &kp LG(RIGHT)  &kp ESC                                                 &none                 &kp LS(LG(LEFT_BRACKET))  &sk LALT     &kp LS(LG(RIGHT_BRACKET))  &kp LG(SPACE)
                                                                               &kp BSPC              &kp TAB  &kp RET  &trans  &trans  &trans
             >;
         };
@@ -166,7 +157,7 @@
             bindings = <
        &none                                                                                                                                                                          &none
 &none  &none              &kp LC(LS(TAB))        &kp LG(LC(V))    &kp LC(TAB)       &none                                   &kp KP_SLASH     &kp N7  &kp N8  &kp N9  &kp KP_MINUS  &none
-&none  &smod LCTRL LCTRL  &smod LSHFT LSHFT      &smod LALT LALT  &smod LGUI LGUI   &kp HOME                                &kp KP_MULTIPLY  &kp N4  &kp N5  &kp N6  &kp KP_PLUS   &none
+&none  &sk LCTRL     &sk LSHFT         &sk LALT     &sk LGUI      &kp HOME                                &kp KP_MULTIPLY  &kp N4  &kp N5  &kp N6  &kp KP_PLUS   &none
        &kp LG(SPACE)      &app_prev              &win_next        &app_next         &kp END                                 &kp KP_DOT       &kp N1  &kp N2  &kp N3  &kp DOT
                                                                               &kp BSPC  &trans  &trans             &kp KP_ENTER  &kp N0 &kp COMMA
             >;
@@ -178,8 +169,8 @@
             bindings = <
        &none                                                                                                                            &none
 &none  &kp F1  &kp F2   &kp F3   &kp F4   &none                                       &none      &kp PAUSE_BREAK   &kp SLCK     &kp KP_NUM  &kp CAPS      &none
-&none  &kp F5  &kp F6   &kp F7   &kp F8   &none                                       &kp GLOBE  &smod RGUI RGUI   &smod LALT LALT  &smod RSHFT RSHFT  &smod RCTRL RCTRL  &none
-       &kp F9  &kp F10  &kp F11  &kp F12  &none                                       &none      &kp PAUSE_BREAK   &smod LALT LALT  &kp KP_NUM  &kp CAPS
+&none  &kp F5  &kp F6   &kp F7   &kp F8   &none                                       &kp GLOBE  &sk RGUI      &sk LALT     &sk RSHFT     &sk RCTRL     &none
+       &kp F9  &kp F10  &kp F11  &kp F12  &none                                       &none      &kp PAUSE_BREAK   &sk LALT     &kp KP_NUM  &kp CAPS
                                           &kp BSPC  &kp TAB  &kp ESC  &trans  &trans  &trans
             >;
         };
