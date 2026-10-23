@@ -108,10 +108,10 @@ layers:
   - →
   - ⌘SPACE
   - {t: ⇧LGUI, h: sticky}
-  - {t: RGUI, h: RGUI}
-  - {t: ⌥, h: ⌥}
-  - {t: RSHFT, h: RSHFT}
-  - {t: RCTRL, h: RCTRL}
+  - {t: RGUI, h: sticky}
+  - {t: ⌥, h: sticky}
+  - {t: RSHFT, h: sticky}
+  - {t: RCTRL, h: sticky}
   - Hyper1
   - ⌦
   - PgDn
@@ -120,7 +120,7 @@ layers:
   - Esc
   - ''
   - ⇧⌘[
-  - {t: ⌥, h: ⌥}
+  - {t: ⌥, h: sticky}
   - ⇧⌘]
   - ⌘SPACE
   - ⌫
@@ -145,10 +145,10 @@ layers:
   - KP MINUS
   - ''
   - ''
-  - {t: ^, h: ^}
-  - {t: ⇧, h: ⇧}
-  - {t: ⌥, h: ⌥}
-  - {t: ⌘, h: ⌘}
+  - {t: ^, h: sticky}
+  - {t: ⇧, h: sticky}
+  - {t: ⌥, h: sticky}
+  - {t: ⌘, h: sticky}
   - Home
   - KP MULTIPLY
   - '4'
@@ -194,10 +194,10 @@ layers:
   - F8
   - ''
   - 🌐
-  - {t: RGUI, h: RGUI}
-  - {t: ⌥, h: ⌥}
-  - {t: RSHFT, h: RSHFT}
-  - {t: RCTRL, h: RCTRL}
+  - {t: RGUI, h: sticky}
+  - {t: ⌥, h: sticky}
+  - {t: RSHFT, h: sticky}
+  - {t: RCTRL, h: sticky}
   - ''
   - F9
   - F10
@@ -206,7 +206,7 @@ layers:
   - ''
   - ''
   - PAUSE BREAK
-  - {t: ⌥, h: ⌥}
+  - {t: ⌥, h: sticky}
   - Num 🔒
   - Caps 🔒
   - {t: ⌫, type: held}
